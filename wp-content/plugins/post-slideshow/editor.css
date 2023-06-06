@@ -1,0 +1,9 @@
+.slider-container {
+    overflow: hidden;
+    position: relative;
+    max-width: 960px !important;
+    padding-top: 60% !important;
+}
+.fetch-btn{
+    margin-bottom: 30px;
+}
