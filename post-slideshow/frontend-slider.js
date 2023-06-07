@@ -74,6 +74,7 @@ window.addEventListener('load', () => {
     function startDragging(event) {
         slides.style.transition = 'none'
         dragStart = event.clientX
+        event.preventDefault();
         toggleDisabled(true)
     }
 
@@ -89,7 +90,7 @@ window.addEventListener('load', () => {
         if (dragStart === null) {
             return
         }
-
+        event.preventDefault();
         slides.style.transition = ''
         shiftSlides(index + (event.clientX < dragStart ? 1 : -1))
         dragStart = null
